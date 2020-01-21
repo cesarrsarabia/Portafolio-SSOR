@@ -1,0 +1,28 @@
+.card-img{
+    height: 250px;
+    width: 100%;
+}
+
+.container-border{
+    border-style: solid;
+    border-color: #007bfc85;
+}
+
+.footer{
+    position: relative;
+    margin-top: 150px; /* negative value of footer height */
+    height: 50px;
+    clear:both;
+    padding-top:20px;
+    color: black;
+    background-color: #24a8bd;
+}
+
+.jumbotron{
+    background-image: url("../img/backImage.jpg");
+    background-size: cover;
+}
+
+.navbar{
+    background-color: #24a8bd;
+}
