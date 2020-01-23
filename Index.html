@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portafolio</title>
+    <title>Portafolio Evidencias</title>
 
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="resources/css/General.css">
-    <script type="text/javascript"  src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-    
+    <script src="resources/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript" src="resources/js/sweet-alert.js"></script>
+
 </head>
+
 <body>
     <header>
-        <div class="navbar navbar-dark box-shadow" id="navHeader">
-            <a class="navbar-brand" href="#">
-                Portafolio de Evidencias
-            </a>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Seminario para la Solución de Problemas de Sistemas Operativos de Red</h4>
+                    <span class="text-muted">Sección: D02</span>
+                    <br>
+                    <span class="text-muted">Alumno: Ramírez Sarabia César Eduardo</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark box-shadow" id="navHeader">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="#">
+                        Portafolio de Evidencias
+                    </a>
+                </button>
+
+            </nav>
         </div>
     </header>
-    
+
     <main>
-        <div id="divAlbum">        
-                <div class="jumbotron" style="height: 100vh;">
-                    <div class="container text-center" style="padding-top: 50px;">
-                        <h1 class="display-5">
-                            Seminario para la Solución de Problemas de Sistemas Operativos de Red
-                        </h1>
-                        <p class="mt-4">
-                            <strong>Objetivo</strong>
+        <div id="divAlbum">
+            <div class="jumbotron" style="height: 100vh;">
+                <div class="container text-center" style="padding-top: 50px;">
+                    <h1 class="display-5">
+                        Seminario para la Solución de Problemas de Sistemas Operativos de Red
+                    </h1>
+                    <p class="mt-4">
+                        <strong>Objetivo</strong>
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <p class="card-text" style="max-width: 43rem;">
+                            Este sitio , funcionara como un portafolio de evidencias para mostrar las actividades
+                            del curso,<br>las cuales seran presentadas como Tutoriales evidenciando el desarrollo de
+                            cada Tarea.
                         </p>
-                        <div class="d-flex justify-content-center">
-                            <p class="card-text" style="max-width: 43rem;">
-                                Este sitio , funcionara como un portafolio de evidencias para mostrar las actividades
-                                del curso,<br>las cuales seran presentadas como Tutoriales evidenciando el desarrollo de 
-                                cada Tarea.
-                            </p>
-                        </div>
                     </div>
                 </div>
-           
+            </div>
+
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">                        
-                        <div class="card mb-4 box-shadow">
+                    <div class="col-md-4">
+                        <div class="card mb-4 border-info mb-3" style="border-color: #0d4f89;">
                             <img src="resources/img/Tarea-1/wind.png" class="card-img">
                             <div class="card-body">
                                 <h5 class="card-title">Tarea 1</h5>
@@ -57,30 +78,32 @@
                     </div>
 
 
-                    <div class="col-md-4">                        
-                        <div class="card mb-4 box-shadow">
+                    <div class="col-md-4">
+                        <div class="card mb-4 border-info mb-3" style="border-color: #0d4f89;">
                             <img src="resources/img/Tarea-2/Portada-Tarea-2.png" class="card-img">
                             <div class="card-body">
                                 <h5 class="card-title">Tarea 2</h5>
-                               <p class="card-text">
-                                Desarrollo de un Programa para los servicios de Windows y Linux.
-                               </p>
-                               <a href="#" class="btn btn-primary">Abrir</a>
+                                <p class="card-text">
+                                    Desarrollo de un Programa para los servicios de Windows y Linux.
+                                </p>
+                                <button class="btn btn-primary" onclick="ShowSweetAlert();">Abrir</button>
                             </div>
                         </div>
                     </div>
-                
 
-               
-                    <div class="col-md-4">                        
-                        <div class="card mb-4 box-shadow">
+
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 border-info mb-3" style="border-color: #0d4f89;">
                             <img src="resources/img/Tarea-3/Portada-Tarea-3.jpg" class="card-img">
                             <div class="card-body">
-                                <h5 class="card-title">Tarea 3</h5>   
+                                <h5 class="card-title">Tarea 3</h5>
                                 <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu.
+                                    Instalar Libre Office en Windows y Linux
+                                    <br>
+                                    <br>
                                 </p>
-                                <a href="#" class="btn btn-primary">Abrir</a>                             
+                                <button class="btn btn-primary" onclick="ShowSweetAlert();">Abrir</button>
                             </div>
                         </div>
                     </div>
@@ -89,9 +112,9 @@
                 </div>
 
                 <div class="row">
-                    
+
                 </div>
-            
+
             </div>
         </div>
     </main>
@@ -101,6 +124,7 @@
             <span style="color: #fff;">Creador: César Sarabia</span>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
