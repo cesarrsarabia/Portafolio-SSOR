@@ -1,120 +1,252 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tarea 1</title>
 
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="resources/css/General.css">
-    <script type="text/javascript"  src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="navbar navbar-dark box-shadow" id="navHeader">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="Index.html">
                 Portafolio de Evidencias
             </a>
         </div>
     </header>
 
     <main>
-        <div class="container">        
-       <div class="row h-100 justify-content-center align-items-center p-top">
-        <div class="col-md-10">
-            <div class="card mb-3">
-                <img class="card-img-top" src="resources/img/Tarea-1/wind.png" alt="Card image cap">
-                <div class="card-body">
-                  <h2 class="card-title">Instalación de Windows y Linux de forma Nativa</h2>
-                
-                    <h5 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">Objetivo</h5>
-                   
-                  
-                   <p class="card-text text-card-pad">
-                        Explicar el proceso de Instalacion de windows 10 y Linux (Ubuntu Mate en este caso) paso a paso, 
-                        de esta manera cualquier usuario puede identificar como es que se lleva a cabo dicho proceso de Instalación.
-                    </p>
+        <div class="container">
+            <div class="row h-100 justify-content-center align-items-center p-top">
+                <div class="col-md-10">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="resources/img/Tarea-1/wind.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Instalación de Windows y Linux de forma Nativa</h2>
 
-                    <h5 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">Antes de Instalar</h5>
-                    
-                    <div class="card-text text-card-pad">
-                        <p class="p-justify">
-                            Antes de instalar, se debe descargar la imagen del sistema operativo correspondiente (.ISO), en este
-                            caso usaremos el de 
-                            <a href='https://www.microsoft.com/es-mx/software-download/windows10' target="_blank">Windows</a> 
-                            y 
-                            <a href='https://ubuntu-mate.org/download/' target="_blank">Ubuntu Mate</a>.
-                            Una vez descargados los archivos .ISO, necesitaremos Bootear una memoria USB, para hacer esto podemos utilizar
-                            algun programa de Creacion de Booteo , el que yo utilizare será <a href='https://rufus.ie/' target="_blank">Rufus</a>.
-                            Una vez instalado Rufus, abrimos el programa y apreciaremos la siguiente interfaz de Usuario.
-                        </p>
-                        <div class="text-center">
-                            <img class="text-center" src="resources/img/Tarea-1/rufus.png" alt="Interfaz Rufus" height="400">
-                        </div>
-                        <p class="p-justify">
-                            Dentro del programa seguimos los siguietes pasos
-                        </p>
-                        <ol>
-                            <li>Elegir El dispositivo (USB a Bootear)</li>
-                            <li>Elección de arranque, elegimos el .iso que usaremos ya sea Windows o Linux</li>
-                            <li>El esquema de particion lo elegimos como MBR</li>
-                            <li>Sistema de destino, elegir Bios o UEFI</li>
-                        </ol>
-                        <p class="p-justify">
-                            Una vez que tengamos la USB lista para bootear, procedemos a reiniciar la computadora con la usb insertada
-                            en su puerto.Lo mas probable es que no se tenga configurado el arranque con USB, para hacer esto presionamos
-                            la tecla f10 (Para equipos HP) , a continuacion se muestra una tabla con las teclas para entrar a BIOS desde
-                            cada equipo.
-                        </p>
-                        <div class="text-center">
-                            <img class="text-center" src="resources/img/Tarea-1/tabla-bios.PNG" alt="Interfaz Rufus" height="400">
-                        </div>
-                        <p class="p-justify">
-                            Dentro de la BIOS , configuramos el orden en que la computadora va a bootear, eligiendo como número 1
-                            la memoria USB, una vez hecho esto guardamos los cambios y al salir de BIOS el equipo deberá arrancar
-                            con el sistema que tenga booteado la USB.
-                        </p>
-                        <div class="text-center">
-                            <img class="text-center" src="resources/img/Tarea-1/boot-orden.jpg" alt="Interfaz Rufus" 
-                            height="350" width="500">
+                            <h5 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Objetivo
+                            </h5>
+
+
+                            <p class="card-text text-card-pad">
+                                Explicar el proceso de Instalacion de windows 10 y Linux (Ubuntu Mate en este caso)
+                                paso a paso, de esta manera cualquier usuario puede identificar como es que se lleva
+                                a cabo dicho proceso de Instalación.
+                            </p>
+
+                            <h5 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Antes de Instalar</h5>
+
+                            <div class="card-text text-card-pad">
+                                <p class="p-justify">
+                                    Antes de instalar, se debe descargar la imagen del sistema operativo correspondiente
+                                    (.ISO), en este
+                                    caso usaremos el de
+                                    <a href='https://www.microsoft.com/es-mx/software-download/windows10'
+                                        target="_blank">Windows</a>
+                                    y
+                                    <a href='https://ubuntu-mate.org/download/' target="_blank">Ubuntu Mate</a>.
+                                    Una vez descargados los archivos .ISO, necesitaremos Bootear una memoria USB, para
+                                    hacer esto podemos utilizar
+                                    algun programa de Creacion de Booteo , el que yo utilizare será <a
+                                        href='https://rufus.ie/' target="_blank">Rufus</a>.
+                                    Una vez instalado Rufus, abrimos el programa y apreciaremos la siguiente interfaz de
+                                    Usuario.
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center" src="resources/img/Tarea-1/rufus.png" alt="Interfaz Rufus"
+                                        height="400">
+                                </div>
+                                <p class="p-justify">
+                                    Dentro del programa seguimos los siguietes pasos
+                                </p>
+                                <ol>
+                                    <li>Elegir El dispositivo (USB a Bootear)</li>
+                                    <li>Elección de arranque, elegimos el .iso que usaremos ya sea Windows o Linux</li>
+                                    <li>El esquema de particion lo elegimos como MBR</li>
+                                    <li>Sistema de destino, elegir Bios o UEFI</li>
+                                </ol>
+                                <p class="p-justify">
+                                    Una vez que tengamos la USB lista para bootear, procedemos a reiniciar la
+                                    computadora con la usb insertada
+                                    en su puerto.Lo mas probable es que no se tenga configurado el arranque con USB,
+                                    para hacer esto presionamos
+                                    la tecla f10 (Para equipos HP) , a continuacion se muestra una tabla con las teclas
+                                    para entrar a BIOS desde
+                                    cada equipo.
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center" src="resources/img/Tarea-1/tabla-bios.PNG"
+                                        alt="Interfaz Rufus" height="400">
+                                </div>
+                                <p class="p-justify">
+                                    Dentro de la BIOS , configuramos el orden en que la computadora va a bootear,
+                                    eligiendo como número 1
+                                    la memoria USB, una vez hecho esto guardamos los cambios y al salir de BIOS el
+                                    equipo deberá arrancar
+                                    con el sistema que tenga booteado la USB.
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-tarea-1" src="resources/img/Tarea-1/boot-orden.jpg"
+                                        alt="Interfaz Rufus">
+                                </div>
+                            </div>
+                            <br>
+                            <!--INICIO CONTENIDO INSTALACION  WINDOWS-->
+                            <h5 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Instalación Windows</h5>
+                            <div class="card-text text-card-pad">
+                                <p class="p-justify">
+                                    Una vez que el equipo inicie con el dispositivo que contiene el SO de Windows 10,
+                                    apreciaremos una pantalla
+                                    como la siguiente
+                                </p>
+
+                                <div class="text-center">
+                                    <img class="text-center img-tarea-1"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_192513.jpg"
+                                        alt="Interfaz Rufus">
+                                </div>
+                                <p class="p-justify">
+                                    Una vez que seleccionamos el Idioma para la instalación , asi como el formato o
+                                    region
+                                    para el teclado, Dar click en continuar con la instalación Y presionar el boton de
+                                    "Instalar
+                                    ahora" como el que aparece en la siguiente imagen
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-tarea-1"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_192534.jpg"
+                                        alt="Interfaz Rufus">
+                                </div>
+
+                                <p class="p-justify">
+                                    El siguiente paso es aceptar los terminos y condiciones de Microsoft, una vez leídos
+                                    simplemente
+                                    marcamos la casilla en la parte inferior izquierda con el texto "Acepto terminos y
+                                    condiciones"
+                                </p>
+
+                                <div class="text-center" style="padding-top: 50px;">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_192638.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                </div>
+
+                                <p class="p-justify" style="padding-top: 70px;">
+                                    En caso de tener algun otro sistema operativo de windows instalado en la
+                                    computadora,el instalador
+                                    nos dará la opción de instalar y mantener los archivos que tengamos en el disco
+                                    duro, o de formatear
+                                    y hacer una instalación con el disco duro limpio. Aqui elegiré formatear e instalar.
+                                    <br>
+                                    Una vez hecho esto, elegimos la partición en la que deseemos instalar windows , y
+                                    presionamos siguiente.
+                                </p>
+                                <div class="text-center" style="padding-top: 50px;">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_192704.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_192818.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                </div>
+                                <p class="p-justify" style="padding-top: 70px;">
+                                    A continuación, podremos ver el progreso de la instalacion del sistema en nuestro
+                                    equipo
+                                </p>
+                                <div class="text-center" style="padding-top: 50px;">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_192849.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                </div>
+                                <p class="p-justify" style="padding-top: 70px;">
+                                    Al terminar la pantalla de carga anterior , el sistema operativo estará instalado en
+                                    nuestro equipo,
+                                    por lo cual los siguientes pasos corresponden para configurar ciertas cosas de
+                                    windows tal como usuario,
+                                    idioma, región, etc.
+                                    <br>
+                                    Configurar Región y Teclado.
+                                </p>
+                                <div class="text-center" style="padding-top: 50px;">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_194228.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_194242.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                </div>
+
+                                <p class="p-justify" style="padding-top: 70px;">
+                                    Ingresar cuenta de Microsoft (outlook,hotmail,live) para el usuario principal de
+                                    windows,
+                                    y un PIN (opcional) para ingresar al sistema.
+                                </p>
+                                <div class="text-center" style="padding-top: 50px;">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_194443.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_194808.jpg" alt="Interfaz Rufus"
+                                        height="300">
+                                </div>
+
+                                <p class="p-justify" style="padding-top: 70px;">
+                                   Por ultimo elegimos la configuración para el equipo, en la cual podemos habilitar localización,
+                                   recopilación de datos entre otras opciones.
+                                </p>
+                                <div class="text-center" style="padding-top: 50px;">
+                                    <img class="text-center rotateimg90"
+                                        src="resources/img/Tarea-1/windows/IMG_20200122_194921.jpg" alt="Interfaz Rufus"
+                                        height="300">
+
+                                </div>
+                                <p class="p-justify" style="padding-top: 70px;">
+                                   Una vez que el sistema haya cargado correctamente y termine, podremos empezar a utilizar Windows 10.
+                                 </p>
+                                 <div class="text-center">
+                                         <img class="text-center img-tarea-1"
+                                         src="resources/img/Tarea-1/windows/IMG_20200122_195138.jpg" alt="Interfaz Rufus"
+                                         height="300">
+ 
+                                 </div>
+                                <!--
+                                <p class="p-justify">
+                                    Al dar click en el boton de Instalar Ahora, nos solicitará un código para activar
+                                    windows, si
+                                    contamos con uno lo ingresamos y presionamos siguiente, en caso contrario elegimos
+                                    la opción
+                                    de no cuento con una clave de producto.
+                                </p>
+                            -->
+                            </div>
+                            <!-- FIN CONTENIDO INSTALACION  WINDOWS-->
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="card-text"><small class="text-muted">23 de Enero de 2020</small></p>
                         </div>
                     </div>
-                    <br>
-                    <!--INICIO CONTENIDO INSTALACION  WINDOWS-->
-                    <h5 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">Instalación Windows</h5>
-                    <div class="card-text text-card-pad">
-                        <p class="p-justify">
-                            Una vez que el equipo inicie con el dispositivo que contiene el SO de Windows 10, apreciaremos una pantalla
-                            como la siguiente
-                        </p>
-                        <!--
-                        <div class="text-center">
-                            <img class="text-center" src="resources/img/Tarea-1/boot-orden.jpg" alt="Interfaz Rufus" 
-                            height="350" width="500">
-                        </div>
-                        -->
-                        <p class="p-justify">
-                            Al dar click en el boton de Instalar Ahora, nos solicitará un código para activar windows, si
-                            contamos con uno lo ingresamos y presionamos siguiente, en caso contrario elegimos la opción
-                            de no cuento con una clave de producto.
-                        </p>
-                    </div>
-                    <!-- FIN CONTENIDO INSTALACION  WINDOWS-->
-                  <br>              
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
-        </div>
-       </div>
 
-       </div>
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container text-center">
             <span style="color: #fff;">Creador: César Sarabia</span>
         </div>
     </footer>
 </body>
+
 </html>
