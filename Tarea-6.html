@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 6</title>
+
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/General.css">
+    <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Seminario para la Solución de Problemas de Sistemas Operativos de Red</h4>
+                    <span class="text-muted">Sección: D02</span>
+                    <br>
+                    <span class="text-muted">Alumno: Ramírez Sarabia César Eduardo</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark box-shadow" id="navHeader">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="Index.html">
+                        Portafolio de Evidencias
+                    </a>
+                </button>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row h-100 justify-content-center align-items-center p-top">
+                <div class="col-md-10">
+                    <div class="card mb-3">
+
+                        <img class="card-img-top" src="resources/img/Tarea-6/ionic-logo.jpg" alt="Imgage Card">
+
+                        <div class="card-body">
+                            <h2 class="card-title">Instalar IONIC y Ruby on Rails</h2>
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Objetivo
+                            </h4>
+
+                            <p class="card-text text-card-pad">
+                                Instalar en los sistemas operativos windows y linux, el framework de ionic ademas de
+                                ruby on rails. Una vez instalados desarrollar una aplicacion web y ejecutarla con dichos
+                                framework. A continuación se explicarán los pasos para llevar a cabo esta instalación.
+                            </p>
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Procedimiento</h4>
+
+                            <div class="card-text text-card-pad">
+                                <p class="p-justify">
+                                    Antes de explicar , explicaré la funcion que tienen estos dos frameworks a
+                                    instalar.Ruby on Rails
+                                    es un framework para desarrollar aplicaciones web con el lenguaje de programacion
+                                    ruby, en el cual se sigue
+                                    el modelo MVC para programar y organizar los proyectos.
+                                    Y por su parte ionic tambien es un framework pero el cual usado para desarrollar
+                                    aplicaciones ya sea web o
+                                    'nativas' multiplataforma el cual usa apache cordova ,angular y se le pueden añadir
+                                    otros componentes.
+                                    A continuación veremos como instalarlos y como montar un proyecto usando estos
+                                    servicios.
+                                </p>
+                                <h4
+                                    class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                    Instalación en Windows
+                                </h4>
+                                <div class="card-text text-card-pad">
+                                    <p class="p-justify">
+                                        El primer paso para instalar IONIC y ruby on rails en windows, es descargar
+                                        los archivos ejecutables para dicha instalación. Los cuales los podemos
+                                        descargar en
+                                        los siguientes link.
+                                        <br>
+                                        <a href="https://rubyinstaller.org/">Enlace descarga Ruby.</a>
+                                        <br>
+                                        en el caso de ionic debemos instalar node js para usar npm y poder instalar
+                                        ionic.
+                                        Lo descargamos en este <a href="https://nodejs.org/es/">enlace.</a>
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura.PNG">
+                                    </div>
+                                    <p class="p-justify">
+                                        Descargamos el instalador correspondiente para nuestro equipo, y a continuacion
+                                        ejecutamos con doble click. La instalación para node iniciará
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_1.PNG">
+                                    </div>
+                                    <p class="p-justify">
+                                        A continuación damos click en siguiente, elegimos la carpeta de destino para la
+                                        instalación
+                                        y esperamos a que terminem de copiarse los archivos de instalación.
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_3.PNG">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_5.PNG">
+                                    </div>
+                                    <p class="p-justify">
+                                        Una vez que el ejecutable termine de instalar los archivos necesarios para usar
+                                        node y npm, abrimos el simbolo de sistema (terminal) y verificamos la version
+                                        instalada
+                                        usando <strong>node -v</strong>
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_6.PNG">
+                                    </div>
+                                    <p class="p-justify">
+                                        Para instalar ionic , usaremo npm lo cual se instalo junto con node js , para
+                                        manejar y
+                                        descargar paquetes. Para descargar ionic ingresamo en terminal :
+                                        <strong>npm install -g ionic cordova</strong> de esta manera iniciara a
+                                        descargarse
+                                        el framework y apache cordova.
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_7.PNG">
+                                    </div>
+                                    <p class="p-justify">
+                                        Una vez que termine la descarga escribimos <strong>ionic</strong> para
+                                        verificar que se haya descargado ionic correctamente.
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_8.PNG">
+                                    </div>
+                                    <hr style="border: 1px solid;">
+                                    <p class="p-justify">
+                                        Ahora basaremos a instalar Ruby on rails ,una vez descargado el instalador
+                                        del link que se mostro al principio del tutorial , lo ejecutamos con doble
+                                        click.
+                                    </p>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_9.PNG">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="text-center">
+                                        <img class="text-center img-fluid"
+                                            src="resources/img/Tarea-6/Windows/Captura_10.PNG">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Instalación en Linux
+                            </h4>
+                            <div class="card-text text-card-pad">
+                                <p class="p-justify">
+
+                                </p>
+
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="card-text"><small class="text-muted">25 de Febrero de 2020</small></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <span style="color: #fff;">Creador: César Sarabia</span>
+        </div>
+    </footer>
+</body>
+
+</html>
