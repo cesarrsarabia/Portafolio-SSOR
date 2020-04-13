@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 10</title>
+
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/General.css">
+    <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+
+<body>
+    <header>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Seminario para la Solución de Problemas de Sistemas Operativos de Red</h4>
+                    <span class="text-muted">Sección: D02</span>
+                    <br>
+                    <span class="text-muted">Alumno: Ramírez Sarabia César Eduardo</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark box-shadow" id="navHeader">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="Index.html">
+                        Portafolio de Evidencias
+                    </a>
+                </button>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row h-100 justify-content-center align-items-center p-top">
+                <div class="col-md-10">
+                    <div class="card mb-3">
+
+                        <img class="card-img-top" src="resources/img/Tarea-10/Ruby-on-Rails.png" alt="Imgage Card">
+
+                        <div class="card-body">
+                            <h2 class="card-title">Instalar sistema en django y Ruby con
+                                base de datos</h2>
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Objetivo
+                            </h4>
+
+                            <p class="card-text text-card-pad">
+                                En esta práctica , instalaremos un sistema en django y ruby on rails
+                                con base de datos , posteriormente asignar permisos de acceso a los grupos de usuarios
+                                en
+                                cada sistema.
+
+                            </p>
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Procedimiento</h4>
+
+                            <div class="card-text text-card-pad">
+                                <p class="p-justify">
+                                    Antes de empezar con esta actividad , debemos instalar django y ruby on rails
+                                    en nuestro equipo. La instalacion de estos frameworks en windows server es
+                                    el mismo procedimeinto al que realizamos en las actividades pasadas las cuales
+                                    podemos acceder eb los siguientes links <a href="Tarea-5.html">Tarea 5</a> y
+                                    <a href="Tarea-6.html">Tarea 6</a>.
+
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid"
+                                        src="resources/img/Tarea-10/Captura-i-django.JPG">
+                                </div>
+                                <br>
+                                <br>
+
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura-i-ruby.PNG">
+                                </div>
+                                <br>
+                                <p class="p-justify">
+                                    Por ultimo un paso mas es crear usuarios y grupos desde active directory
+                                    Con los permisos necesarios como se realizo en la
+                                    <a href="Tarea-9.html">Tarea 9.</a>
+                                </p>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_1.PNG">
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_2.PNG">
+                                </div>
+
+                                <p class="p-justify">
+                                    El siguiente paso para poder conectar el sistema es crear una regla en el firewall
+                                    del lado
+                                    de nuestro server para las reglas de entrada y el puerto.Como se muestra a
+                                    continuación.
+                                </p>
+
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_4.PNG">
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_5.PNG">
+                                </div>
+                                <br>
+                                <br>
+                                <p class="p-justify">
+                                    Agregamos el nombre de nuestra regal de entrada para poder identificarla más facil.
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_6.PNG">
+                                </div>
+                                <p class="p-justify">
+                                    Por ultimo , una vez que creamos la regla, agregamos el grupo o usuarios por
+                                    individual
+                                    que tendran acceso a este sistema.
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_7.PNG">
+                                </div>
+
+                            </div>
+
+                            <br>
+                            <br>
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Configuración Django</h4>
+
+                            <div class="card-text text-card-pad">
+                                <p class="card-text text-card-pad">
+                                    Para vincular los usuarios creados en active directory con nuestra base de datos de
+                                    la aplicacion , , en el archivo
+                                    settings.py agregamos lo siguiente .
+
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_8.PNG">
+                                </div>
+
+                                <p class="card-text text-card-pad">
+                                    Por último agregamos el middelware necesario para la autentificación de usuarios
+                                    dados de alta en active directory.
+
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_9.PNG">
+                                </div>
+
+                                <p class="card-text text-card-pad">
+                                    Con esta capa de autentificacion , será posible dar el permiso a los usuarios que
+                                    esten dados de alta
+                                    en el grupo de usuarios que agregamos en la regla de entrada para el puerto que
+                                    escuchara la aplicacion
+                                    de dijango.
+                                </p>
+                            </div>
+
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Configuración Ruby</h4>
+
+                            <div class="card-text text-card-pad">
+                                <p class="card-text text-card-pad">
+                                    Para conectar nuestro sistema en ruby con actiev directory . Instalaremos las
+                                    'gemas' de devise y devise LDAP Authenticatable para implemetar la autentificacion
+                                    con active directory
+
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_r_1.PNG">
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_r_2.PNG">
+                                </div>
+                                <br>
+                                <p class="card-text text-card-pad">
+                                  A continuación editaremos el archivo de devise.rb para agregar el la configuracion para los 
+                                  usuarios que ingresaran dados de alta en Active directory
+                                </p>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_r_3.PNG">
+                                </div>
+                                <br>
+                                <p class="card-text text-card-pad">
+                                   Por ultimo agregaremos la confioguracion para conectarnos co nel active directory y nuestro grupo de usuarios
+                                   en el servidor
+                                  </p>
+                                  <div class="text-center">
+                                      <img class="text-center img-fluid" src="resources/img/Tarea-10/Captura_r_4.PNG">
+                                  </div>
+
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="card-text"><small class="text-muted">02 de Abril de 2020</small></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <span style="color: #fff;">Creador: César Sarabia</span>
+        </div>
+    </footer>
+</body>
+
+</html>
