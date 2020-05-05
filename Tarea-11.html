@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 11</title>
+
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/General.css">
+    <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+
+<body>
+    <header>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Seminario para la Solución de Problemas de Sistemas Operativos de Red</h4>
+                    <span class="text-muted">Sección: D02</span>
+                    <br>
+                    <span class="text-muted">Alumno: Ramírez Sarabia César Eduardo</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark box-shadow" id="navHeader">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="Index.html">
+                        Portafolio de Evidencias
+                    </a>
+                </button>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row h-100 justify-content-center align-items-center p-top">
+                <div class="col-md-10">
+                    <div class="card mb-3">
+
+                        <img class="card-img-top" src="resources/img/Tarea-11/ubuntu_s.png" alt="Imgage Card">
+
+                        <div class="card-body">
+                            <h2 class="card-title">Instalar Linux Server y Crear Usuarios</h2>
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Objetivo
+                            </h4>
+
+                            <p class="card-text text-card-pad">
+                               En esta práctica 11, realizaré la instalacion de ubuntu server paso a paso 
+                               asi como he realizado en actividades previas la instalación de distintos sistemas 
+                               operativos.Posteriormente agregaremos 10 usuarios en el servidor y crearemos 4 grupos 
+                               agregando dichos usuarios a ellos.
+                            </p>
+
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Procedimiento</h4>
+
+                            <div class="card-text text-card-pad">
+                                <p class="p-justify">
+                                  Ubuntu server es una distribucion provenciente de ubuntu , pero con el objetivo de crear administrar 
+                                  y controlar servidores y en los ultimos años se ha extendido 
+                                  de una manera exponencial su uso colocandose como uno de los mas usados para servidores web
+                                  ademas de contar con muchas similitudes con las herramientas que proporciona debian para
+                                  servidores.
+                                  Primero tenemos que descargar la imagen iso de ubuntu server del 
+                                  <a href="https://ubuntu.com/download/server">link oficial.</a> 
+
+                                </p>
+                               
+                               
+                                <p class="p-justify">
+                                   Una vez que tengamos una memoria usb booteada con la imagen ISO de ubuntu server
+                                   preseguimos a empezar la instalacion al arrancar la pc.
+                                   Primero seleccionaremos el idioma sistema que deseamos instalar.
+                                </p>
+
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_185717.jpg">
+                                </div>
+
+
+                                <p class="p-justify">
+                                    En el siguiente paso seleccionaremos la configuracion e idioma para el teclado 
+                                    seguido de la red que usaremos para la conexion del server.
+                                 </p>
+ 
+                                 <div class="text-center">
+                                     <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_185745.jpg">
+                                 </div>
+                                 <br><br>
+                                 <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_185828.jpg">
+                                </div>
+
+                                <p class="p-justify">
+                                   A continuación tendremos que seleccionar el espacio o la particion en el disco 
+                                   duro en la cual queremos instalar ubuntu server , en mi caso seleccionare la instalación 
+                                   en todo el disco.
+                                 </p>
+                                 <br>
+                                 <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_185936.jpg">
+                                </div>
+
+                                <p class="p-justify">
+                                    Una vez que configuramos los puntos anteriores , podremos ver el resumen de la instalación 
+                                    que se realizará de ubuntu server. Seleccionamos la opcion de 'HECHO' y presionamos enter
+                                    pa continuar.
+                                </p>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_185953.jpg">
+                                </div>
+
+                                <p class="p-justify">
+                                    Por último , tendremos que ingresar el nombre y contraseña que usaremos para nuestro server
+                                    , com dicha credencial , gestionaremos las operaciones dentro del servidor. Despues de 
+                                    ingresar los datos continuamos con la tecla enter.
+                                </p>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_190006.jpg">
+                                </div>
+
+                                <p class="p-justify">
+                                   Por último , el sistema empezara a instalarsey visuaizaremos los servicios que se instalacioncomo en la 
+                                   siguiente imagen.
+                                </p>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_190142.jpg">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_190959.jpg">
+                                </div>
+
+                                <p class="p-justify">
+                                   Una vez que termine la instalación , se reiniciara el sistema e ingresaremos 
+                                   nuestro username y contraseña que registramos durante la instalación.
+                                 </p>
+                                 <br>
+                                 <br>
+                                 <div class="text-center">
+                                     <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_191040.jpg">
+                                 </div>
+                                                                 
+                            </div>
+
+                            <br>
+                            <br>
+                            <h4 class="d-inline-block card-subtitle text-muted float-left margin-top margin-subtitle">
+                                Creación de usuarios y grupos</h4>
+
+                            <div class="card-text text-card-pad">
+
+                                <p class="p-justify">
+                                    Una vez loggeados , para ingresar un usuario nuevo ingresaremos la siguiente sentencia en 
+                                    la terminal <br>
+                                    <strong>sudo adduser NombreUsuario</strong>
+                                    <br>
+                                    de esta manera a continuacion ingresaremos la información de usuario ,tal como 
+                                    nombre , telefono , etc.
+                                    <br>
+                                    Para ingresar todos los usuarios registrados ingresamos <strong>cut -d: -f1 /etc/passwd</strong>
+                                  </p>
+                                  <br>                                  
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_191548.jpg">
+                                </div>
+                            
+                                <p class="p-justify">
+                                   Despues de ingresar los 10 usuarios , ahora registraremos los grupos con sus respectivos usuarios
+                                   Para agregar un grupo solo tenemos que ingresar la sentencia : 
+                                   <strong>sudo addgroup NombreGrupo</strong> y a continuación agregamos los usuarios para cada grupo 
+                                   con : <br>
+                                   <strong>sudo adduser NomberUsuario NombreGrupo </strong>
+                                  </p>
+                                  <br>                                  
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_192034.jpg">
+                                </div>
+                                <br>  
+                                <br>                                
+                                <div class="text-center">
+                                    <img class="text-center img-fluid" src="resources/img/Tarea-11/IMG_20200504_192049.jpg">
+                                </div>
+                            </div>
+
+
+                           
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="card-text"><small class="text-muted">05 de Mayo de 2020</small></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <span style="color: #fff;">Creador: César Sarabia</span>
+        </div>
+    </footer>
+</body>
+
+</html>
